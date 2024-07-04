@@ -1,0 +1,108 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.top-bar h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.background-image {
+  background-image: url('https://images.unsplash.com/photo-1599600540907-62e9b06e6597?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tasks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.task-card {
+  background-color: grey;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-card:hover {
+  transform: translateY(-10px);
+}
+
+.task-card p, .task-card h4 {
+  margin: 10px 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex-grow: 1;
+  margin: 5px;
+}
+
+.btn-warning {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: grey;
+}
+
+.btn-danger {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.text-danger {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}

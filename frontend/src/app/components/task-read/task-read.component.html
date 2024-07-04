@@ -1,0 +1,25 @@
+<div class="top-bar">
+  <h2>TASKS</h2>
+</div>
+
+<div class="background-image">
+  <div class="tasks-container">
+    <div class="task-card" *ngFor="let task of tasks">
+      <p><strong>Task ID:</strong> {{ task._id }}</p>
+      <h4>{{ task.title }}</h4>
+      <p><strong>Description:</strong> {{ task.description }}</p>
+      <p><strong>Status:</strong> {{ task.status }}</p>
+      <p><strong>Due Date:</strong> {{ task.due_date }}</p>
+      <p><strong>Created At:</strong> {{ task.created_at }}</p>
+      <p><strong>Updated At:</strong> {{ task.updated_at }}</p>
+      <div class="button-container">
+        <button (click)="editTask(task._id)" class="btn btn-warning">Edit</button>
+        <button (click)="deleteTask(task._id)" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+    <p class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </div>
+</div>
+
+
+  

@@ -1,0 +1,50 @@
+<!-- task-create.component.html -->
+<div class="navbar">
+  <div class="nav-buttons">
+    <button class="btn" routerLink="/read">Existing Tasks</button>
+    <button class="btn" routerLink="/assign">Assign Tasks</button>
+    <button class="btn" (click)="logout()">Logout</button>
+
+  </div>
+</div>
+
+<div class="background-image">
+  <div class="form-container">
+    <div class="form-box">
+      <h2>Create New Task</h2>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" [(ngModel)]="title" name="title" class="form-control" placeholder="Enter task title" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" [(ngModel)]="des" name="description" class="form-control" placeholder="Enter task description" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="due_date">Due Date</label>
+          <input type="date" id="due_date" [(ngModel)]="due_date" name="due_date" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Task</button>
+        <p class="text-danger mt-3" *ngIf="errorMessage">{{ errorMessage }}</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="container">
+    <h2>Create New Task</h2>
+    <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" formControlName="title" class="form-control" placeholder="Enter task title">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" class="form-control" placeholder="Enter task description"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Create Task</button>
+    </form>
+  </div> -->

@@ -1,0 +1,66 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+}
+
+.navbar {
+  border-radius: 0 0 10px 10px;
+  background-color: black;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col-md-2, .col-md-3 {
+  padding: 0 10px;
+}
+
+.task-card {
+  background-color: grey;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.task-card .card-body > * {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-card .card-body > *:last-child {
+  border-bottom: none;
+}
+
+.task-card h3 {
+  margin-bottom: 5px;
+}
+
+.task-card button {
+  margin-top: 10px;
+  background-color: black;
+}
+
+.task-card p {
+  margin-bottom: 8px;
+}
+
+.card {
+  margin: 10px;
+}
+
+.d-flex .btn {
+  flex: 1;
+}
+
+.d-flex .btn + .btn {
+  margin-left: 10px;
+}

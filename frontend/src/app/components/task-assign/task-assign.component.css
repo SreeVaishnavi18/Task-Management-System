@@ -1,0 +1,134 @@
+.assign-task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  background-image: url('https://images.unsplash.com/photo-1569470451072-68314f596aec?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpg');
+  color: white; /* Text color for the entire page */
+  
+}
+
+.assign-form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: grey; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  margin-top: 40px;
+  transition: box-shadow 0.3s ease;
+}
+
+.assign-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assign-form-container form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.assign-form-container form label {
+  font-weight: bold;
+  color: black;
+  width: 40%; 
+  height: 80%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.assign-form-container form input,
+.assign-form-container form button {
+  flex: 1; 
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.assign-form-container form button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  justify-content: center ;/* Align button to the right */
+}
+
+.assign-form-container form button:hover {
+  background-color: #0056b3;
+}
+
+
+.user-list-container {
+  width: 100%;
+  margin-top: 30px;
+}
+.task-list-container{
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.task-list,
+.user-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  gap: 10px; 
+  padding: 10px;
+}
+
+.task-card,
+.user-card {
+  background-color: grey; 
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-width: 250px; 
+  width: 300px; 
+  flex: 0 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+  color:black;
+}
+
+.task-card h4,
+.user-card p {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc; 
+
+}
+.task-card p {
+  margin-bottom: 5px; 
+  border-bottom: 1px solid #ccc; 
+}
+
+
+.user-card {
+  background-color: grey; 
+}
+
+.horizontal-task-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  margin-top: 20px;;
+}
+.filtered-task-container{
+
+  width: 100%;
+  margin-top: 20px;
+
+}
+
+
+
+h2 {
+  text-align: center;
+}

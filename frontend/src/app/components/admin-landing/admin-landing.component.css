@@ -1,0 +1,71 @@
+/*body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #2575fc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .nav-buttons {
+    display: flex;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .landing-page {
+    background-image: url('assets/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100% - 70px); /* Adjust height based on navbar height 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .admin-title {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .admin-title h2 {
+    color: #333;
+    margin: 0;
+  }*/
+  

@@ -1,0 +1,128 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-buttons {
+    display: flex;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: grey;
+  }
+  
+  .form-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+     /* Adjust this value to move the container down */
+  }
+  
+  .form-box {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .form-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .form-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: center;
+  }
+  
+  .btn-primary:hover {
+    background-color: grey;
+  }
+  
+  .text-danger {
+    color: red;
+  }
+  .background-image {
+    background-image: url('https://plus.unsplash.com/premium_photo-1708010549623-37eafb8245b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhbGNrJTIwYW5kJTIwd2lodGUlMjBtYXJibGUlMjBiZyUyMHBpY3R1cnxlbnwwfHwwfHx8MA%3D%3D.jpg');
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .navbar .nav-buttons .btn {
+    color: white; 
+    background-color: transparent; 
+    border: none; 
+    outline: none; 
+  }
+  
+  .navbar .nav-buttons .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  
+  
+  
+  
+ 
+  
+  

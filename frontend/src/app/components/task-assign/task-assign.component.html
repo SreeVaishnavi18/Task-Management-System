@@ -1,0 +1,64 @@
+<div class="assign-task-container">
+  <!-- First Part: Assignment Form -->
+  <div class="assign-form-container">
+    <h2>Task Assignment</h2>
+    <form [formGroup]="assignForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="task_id">Task:</label>
+        <select id="task_id" formControlName="task_id" required>
+          <option *ngFor="let task of tasks" [value]="task._id">{{ task.title }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="user_id">User:</label>
+        <select id="user_id" formControlName="user_id" required (change)="onUserChange($event)">
+          <option *ngFor="let user of users" [value]="user.id">{{ user.username }}</option>
+        </select>
+      </div>
+      <div>
+        <label for="due_date">Due Date:</label>
+        <input id="due_date" formControlName="due_date" type="date" required>
+      </div>
+      <button type="submit">Assign</button>
+    </form>
+  </div>
+
+  <!-- Second Part: User Details -->
+  <div class="user-list-container">
+    <h2>User List</h2>
+    <ul class="user-list">
+      <li *ngFor="let user of users" class="user-card">
+        <p><strong>ID:</strong> {{ user.id }}</p>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Third Part: Task Details -->
+  <div class="task-list-container">
+    <h2>Tasks List</h2>
+    <ul class="task-list">
+      <li *ngFor="let task of tasks" class="task-card">
+        <p><strong>Task ID:</strong> {{ task._id }}</p>
+        <p>{{ task.title }}</p>
+        <p><strong>Description:</strong> {{ task.description }}</p>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Fourth Part: Filter Tasks By User ID -->
+  <div class="filtered-task-container">
+    <h2>Filter Tasks By User ID</h2>
+    <input type="text" placeholder="Enter User ID" (input)="onUserInput($event)">
+    <ul class="horizontal-task-list">
+      <li *ngFor="let task of filteredTasks" class="task-card">
+        <p><strong>Task ID:</strong> {{ task.task_id }}</p>
+        <p>{{ task.title }}</p>
+        <p><strong>Description:</strong> {{ task.description }}</p>
+        <p><strong>Due Date:</strong> {{ task.due_date }}</p>
+        <p><strong>Status:</strong> {{ task.status }}</p>
+        <p><strong>Assigned At:</strong> {{ task.assigned_at }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
